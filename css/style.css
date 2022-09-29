@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark-purple: #615C73;
+  --color-purple: #D2C9EC;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  background-color: var(--color-dark-purple);
+  color: var(--color-purple);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+ font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5em;
+}
+
+.selections {
+  text-align: center;
+}
+
+.selections select {
+  width: 30%;
+  padding: 0.5em;
+  background-color: var(--color-purple);
+  border-width: 3px;
+  font-size: 1em;
+}
+
+.selections select:first-child {
+  margin-right: 3em;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
+  color: var(--color-dark-purple);
+}
+
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  width: 30%;
+  margin-bottom: 3em;
+  border: 3px solid var(--color-purple);
+  background-color: var(--color-purple);
+}
+
+.character > * {
+ margin-bottom: .5em;
+}
+
+.hidden {
+  display: none;
+}
